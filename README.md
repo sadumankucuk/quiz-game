@@ -1,6 +1,6 @@
 # React JS - Redux Simple App
 
-* API - [https://opentdb.com/](Open Trivia Database)
+* API - [https://opentdb.com/] ( Open Trivia Database )
 * React Quiz App - [Demo](https://react-quiz-game.netlify.com)
 
 ### How to use
