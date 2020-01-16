@@ -11,6 +11,15 @@
   font-size: 50px;
 }
 
+.card-meta {
+  padding-bottom: 25px;
+  font-size: large;
+}
+
+.card-description {
+  color: black;
+}
+
 @media (max-width: 1000px) {
   .icon {
     position: fixed;

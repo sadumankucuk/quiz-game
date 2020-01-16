@@ -9,6 +9,7 @@ import {
   getQuestions,
   nextQuestion
 } from '../../redux/actions/questionsActions';
+const { Meta } = Card;
 
 const QuestionPage = props => {
   let history = useHistory();
@@ -45,11 +46,15 @@ const QuestionPage = props => {
         <Row>
           <Col span={6} />
           <Col span={12}>
-            <Card
-              title={currentQuestion.text}
-              bordered={false}
-              className="card"
-            >
+            <Card bordered={false} className="card">
+              <Meta
+                className="card-meta"
+                description={
+                  <span className="card-description">
+                    {currentQuestion.text}
+                  </span>
+                }
+              />
               {currentQuestion &&
                 currentQuestion.options.map((option, index) => (
                   <p key={index}>
