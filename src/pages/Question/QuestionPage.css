@@ -1,0 +1,30 @@
+.card {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+  .icon {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1000px) {
+  .icon {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
