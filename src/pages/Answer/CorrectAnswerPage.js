@@ -52,14 +52,12 @@ const CorrectAnswer = props => {
   );
 
   const quizPage = (
-    <>
-      <div className="App">
-        <Lottie options={defaultSuccessOptions} height={300} width={300} />
-        <Button type="primary" onClick={next}>
-          Next Question
-        </Button>
-      </div>
-    </>
+    <div className="App">
+      <Lottie options={defaultSuccessOptions} height={300} width={300} />
+      <Button type="primary" onClick={next}>
+        Next Question
+      </Button>
+    </div>
   );
 
   return (

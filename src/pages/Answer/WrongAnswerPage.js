@@ -24,7 +24,7 @@ const WrongAnswerPage = ({ index, point, removePersist }) => {
 
   return (
     <>
-      <HeaderComponent questionNumber={index + 1} point={point} />
+      <HeaderComponent questionNumber={index + 1} point={point - 100} />
       <div className="App">
         <Lottie options={defaultOptions} height={300} width={300} />
         <Link to="/">
