@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import './QuestionPage.css';
@@ -27,7 +28,7 @@ const QuestionPage = props => {
     if (index === 0) {
       getQuestions(categoryId);
     }
-  }, [getQuestions, categoryId, index]);
+  }, [categoryId, index]);
 
   const nextStep = event => {
     if (event.target.value === currentQuestion.correct) {

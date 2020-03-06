@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import './WelcomePage.css';
 import logo from '../../assets/logo.svg';
@@ -19,7 +20,7 @@ const WelcomePage = props => {
   useEffect(() => {
     getCategories();
     removePersist();
-  }, [getCategories, removePersist]);
+  }, []);
 
   const onChange = value => {
     changeCategoryId(value);
